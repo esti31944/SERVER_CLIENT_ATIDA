@@ -1,0 +1,105 @@
+
+/* עיצוב כללי */
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  direction: rtl; /* בשביל עברית */
+}
+
+h1, h3 {
+  text-align: center;
+  color: #444;
+}
+
+/* עיצוב הקונטיינר */
+div {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* טופס */
+form {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 95%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background: #4cafef;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background: #379fd1;
+}
+
+/* רשימת אתרים */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+li strong {
+  font-size: 16px;
+  color: #222;
+}
+
+li img {
+  margin: 10px 0;
+  border-radius: 8px;
+  max-width: 120px;
+  height: auto;
+  display: block;
+}
+
+li button {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+li button:hover {
+  background: #d32f2f;
+}
+
+/* כפתור רענון */
+button.refresh {
+  background: #4caf50;
+  margin: 10px 0;
+}
+
+button.refresh:hover {
+  background: #3d9142;
+}
