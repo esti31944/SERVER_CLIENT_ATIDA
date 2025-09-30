@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const http = require("http");
 const cors = require("cors");
+const {config} = require("./config/secret")
 
 const {routesInit} = require("./routes/config_routes")
 
@@ -22,5 +23,6 @@ routesInit(app)
 
 const server = http.createServer(app);
 
-let port = process.env.PORT || 3008;
+// let port = process.env.PORT || 3008;
+let port = config.port || 3008;
 server.listen(port, ()=>{console.log("Server running on port", port);});
